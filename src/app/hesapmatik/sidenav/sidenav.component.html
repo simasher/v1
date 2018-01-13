@@ -1,0 +1,13 @@
+
+  <nav class="sidebar">
+    <ul class="nav nav-pills" *ngFor="let hesap of hesapmatikler" >
+        <li class="nav-item">
+          <a class="nav-link active" [routerLink]="[hesap.key]">
+              <span>{{hesap.id}}</span><br />
+              <span>{{hesap.hesap}}</span><br />
+              <span>{{hesap.aciklama}}</span><br />
+              <span>{{hesap.key}}</span><br />
+          </a>
+        </li>
+    </ul>
+  </nav>

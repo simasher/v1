@@ -1,0 +1,22 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 d-none d-sm-block bg-light">
+            <app-sidenav></app-sidenav>
+        </div>
+        <div class="col-sm-9 ml-sm-auto col-md-10 pt-3"  style="margin-left:240px">
+            <main role="main">
+                <div>{{Hesapmatik}}</div>
+                aaa
+                <router-outlet name="hesap"></router-outlet>
+                ccc
+                <section class="row text-center placeholders">
+                        <dx-text-box [(value)]="name" width="300"></dx-text-box>{{name}}
+                        <dx-button text="hello w!"></dx-button>         
+                </section>
+
+                
+            </main>
+        </div>
+    </div>
+  </div>
